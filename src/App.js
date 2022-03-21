@@ -8,20 +8,31 @@ import Contact from './Contact';
 import Categories from './Categories';
 import Kids from './Kids';
 import Error from './Error';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 function App() {
   return (
-    <Router>
-    <Navbar/>
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/categories' element={<Categories />} />
-           <Route path='kids' element={<Kids/>}/>
-        <Route path='*' element={<Error/>}/>
-        </Routes>
-    </Router>
+
+    <>
+     <HoverCounter/>
+    <ClickCounter/>
+    
+     </>
+
+    // <Router>
+    // <Navbar/>
+    //   <Routes>
+    //     <Route exact path='/' element={<Home />} />
+    //     <Route path='/about' element={<About />} />
+    //     <Route path='/contact' element={<Contact />} />
+    //     <Route path='/categories' element={<Categories />} />
+    //        <Route path='kids' element={<Kids/>}/>
+    //     <Route path='*' element={<Error/>}/>
+    //     </Routes>
+    // </Router>
+         //Code for HOC
+    
   );
 }
 
